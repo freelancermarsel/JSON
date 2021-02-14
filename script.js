@@ -1,6 +1,6 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", () => {
-    // Просто для примера
+    // Just for Example
     function createCards(response) {
         response.forEach(item => {
             let card = document.createElement('div');
@@ -61,26 +61,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // ======================================================
     // Fetch Format
-    // function Req() {
-        // const request = new XMLHttpRequest();
-        // request.open(method, url);
-        // request.setRequestHeader("Content-type", "application/json; charset=utf-8");
-        // request.send();
-        // request.addEventListener("load", () => {
-        //     let data = JSON.parse(request.response);
-        //     if (request.status === 200) {
-        //         console.log(data);
-        //         okFunction(data);
-        //     } else {
-        //         errFunction(error);
-        //     }
-        // });
-        
-        // getResource("http://localhost:3000/people") 
-        //     .then(data => createCards(data))
-        //     .catch(err => console.error(err));
+    // function Req() {      
+    //     getResource("http://localhost:3000/people") 
+    //         .then(data => createCards(data))
+    //         .catch(err => console.error(err));
 
-        // this.remove();
+    //     this.remove();
     // }
     
 
