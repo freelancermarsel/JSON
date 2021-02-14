@@ -1,7 +1,7 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", () => {
 
-    function Req({method, url, error, okFunction, errFunction}) {
+    function Req({method, url, okFunction, errFunction}) {
         const request = new XMLHttpRequest();
         request.open(method, url);
         request.setRequestHeader("Content-type", "application/json; charset=utf-8");
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.log(data);
                 okFunction(data);
             } else {
-                errFunction(error);
+                errFunction(data);
             }
         });
     }
@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
         Req({
             method: "GET",
             url: "http://localhost:3000/people",
-            error: "Произошла ошибка...",
             okFunction(data) {
                 data.forEach(item => {
                     let card = document.createElement('div');
@@ -47,8 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     document.querySelector('.app').append(card);
                 });
             },
-            errFunction(error) {
-                console.error({error});
+            errFunction(data) {
+                console.error('Проиошла ошибка...');
             }
         });
     }, {once: true});
