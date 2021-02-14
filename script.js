@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector('.app').append(card);
         });
     }
+    const form = document.querySelector("form");
 
     // ==============================================
     // POST
@@ -76,7 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // ======================================================
     // Fetch Format
-    // const form = document.querySelector("form");
     // function Req() {    
     //     let formData = new FormData(form);
     //     formData.append("id", Math.random());
@@ -111,6 +111,35 @@ document.addEventListener("DOMContentLoaded", () => {
     // }
 
 
+    // =============================================================
+    // Axios Format
+    // async function getResource(url) {
+    //     const res = await axios(`${url}`);
+
+    //     if (res.status !== 200) {
+    //         throw new Error(`Could not fetch ${url}, status: ${res.status}`);
+    //     }
+
+    //     return res;
+    // }
+
+    // function Req(e) {    
+    //     e.preventDefault();
+    //     let formData = new FormData(form);
+    //     formData.append("id", Math.random());
+    
+    //     let obj = {};
+    //     formData.forEach((value, key) => {
+    //         obj[key] = value;
+    //     });
+
+    //     axios.post("http://localhost:3000/people", obj);
+    //     // this.remove();
+    // }
+    // document.querySelector('form').addEventListener("submit", (e) => Req(e));
+
+
+    
     // ==============================================
     // GET 
     // ==============================================
