@@ -1,39 +1,44 @@
 {
-    "people": [
-        {
-            "name": "Ann",
-            "sex": "female",
-            "surname": "Watson",
-            "age": "26",
-            "photo": "https://v-kurse.ru/upload/medialibrary/129/129f4d4c0ce54f2264ab3187485b2ca3.jpg"
-        },
-        {
-            "name": "John",
-            "sex": "male",
-            "surname": "Smith",
-            "age": "30",
-            "photo": "https://bogdo.studio/assets/images/resources/69/502.jpg"
-        },
-        {
-            "name": "Maria",
-            "sex": "female",
-            "surname": "Kseniya",
-            "age": "21",
-            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVSRYJHjN1XfILEvm2pbPDOFFUQrXPMDRcrg&usqp=CAU"
-        },
-        {
-            "name": "Bella",
-            "sex": "female",
-            "surname": "Porsh",
-            "age": "24",
-            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVAgpazcflGuDFrL6HOKwk8DcWoZlCWMpYhw&usqp=CAU"
-        },
-        {
-            "name": "Pablo",
-            "sex": "male",
-            "surname": "Escobar",
-            "age": "35",
-            "photo": "https://www.e-xecutive.ru/uploads/article/image/1985929/thumb_Akhverdyan_Arik.jpg"
-        }
-    ]
+  "people": [
+    {
+      "name": "Ann",
+      "sex": "female",
+      "surname": "Watson",
+      "age": "26",
+      "photo": "https://v-kurse.ru/upload/medialibrary/129/129f4d4c0ce54f2264ab3187485b2ca3.jpg"
+    },
+    {
+      "name": "John",
+      "sex": "male",
+      "surname": "Smith",
+      "age": "30",
+      "photo": "https://bogdo.studio/assets/images/resources/69/502.jpg"
+    },
+    {
+      "name": "Maria",
+      "sex": "female",
+      "surname": "Kseniya",
+      "age": "21",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVSRYJHjN1XfILEvm2pbPDOFFUQrXPMDRcrg&usqp=CAU"
+    },
+    {
+      "name": "Bella",
+      "sex": "female",
+      "surname": "Porsh",
+      "age": "24",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVAgpazcflGuDFrL6HOKwk8DcWoZlCWMpYhw&usqp=CAU"
+    },
+    {
+      "name": "Pablo",
+      "sex": "male",
+      "surname": "Escobar",
+      "age": "35",
+      "photo": "https://www.e-xecutive.ru/uploads/article/image/1985929/thumb_Akhverdyan_Arik.jpg"
+    },
+    {
+      "name": "Марсель",
+      "age": "Бисенгалиев",
+      "id": "0.3511237935527911"
+    }
+  ]
 }

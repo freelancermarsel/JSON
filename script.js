@@ -1,5 +1,6 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", () => {
+    // =============================================
     // Just for Example
     function createCards(response) {
         response.forEach(item => {
@@ -25,7 +26,93 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // ==============================================
+    // POST
+    // ==============================================
+    // XMLHttpRequest Format
+    // function Req({method, url, error, okFunction, errFunction, formSelector}) {
+        // const form = document.querySelector(formSelector);
+        // let formData = new FormData(form);
+        // formData.append("id", Math.random());
 
+        // let obj = {};
+        // formData.forEach((value, key) => {
+        //     obj[key] = value;
+        // });
+        // console.log(obj);
+        // let json = JSON.stringify(obj);
+
+    //     const request = new XMLHttpRequest();
+    //     request.open(method, url);
+    //     request.setRequestHeader("Content-type", "application/json; charset=utf-8");
+    //     request.send(json);
+    //     request.addEventListener("load", () => {
+    //         let data = JSON.parse(request.response);
+    //         if (request.status === 200) {
+    //             console.log(data);
+    //             okFunction(data);
+    //             console.log(data);
+    //         } else {
+    //             errFunction(error);
+    //         }
+    //     });
+    // }
+
+    // document.querySelector("form").addEventListener("submit", (e) => {
+    //     e.preventDefault();
+    //     Req({
+    //         method: "POST",
+    //         url: "http://localhost:3000/people",
+    //         error: "Произошла ошибка...",
+    //         okFunction: createCards,
+    //         errFunction(error) {
+    //             console.error({error});
+    //         },
+    //         formSelector: "form"
+    //     });
+    //     e.target.remove();
+    // }, {once: true});
+
+    
+    // ======================================================
+    // Fetch Format
+    // const form = document.querySelector("form");
+    // function Req() {    
+    //     let formData = new FormData(form);
+    //     formData.append("id", Math.random());
+    
+    //     let obj = {};
+    //     formData.forEach((value, key) => {
+    //         obj[key] = value;
+    //     });
+    //     console.log(obj);
+
+    //     getResource("http://localhost:3000/people", obj) 
+    //         .then(data => createCards(data))
+    //         .catch(err => console.error(err));
+    // }
+
+    // form.addEventListener("submit", Req);
+    
+    // async function getResource(url, data) {
+    //     const res = await fetch(`${url}`, {
+    //         method: "POST",
+    //         headers: {
+    //             "Content-type": "application/json"
+    //         },
+    //         body: JSON.stringify(data)
+    //     });
+
+    //     if (!res.ok) {
+    //         throw new Error(`Could not fetch ${url}, status: ${res.status}`);
+    //     }
+
+    //     return await res.json();
+    // }
+
+
+    // ==============================================
+    // GET 
     // ==============================================
     // XMLHttpRequest Format
     // function Req({method, url, error, okFunction, errFunction}) {
@@ -38,6 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //         if (request.status === 200) {
     //             console.log(data);
     //             okFunction(data);
+    //             console.log(data);
     //         } else {
     //             errFunction(error);
     //         }
@@ -57,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //     });
     //     e.target.remove();
     // }, {once: true});
-    
+ 
 
     // ======================================================
     // Fetch Format

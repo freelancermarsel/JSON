@@ -8,7 +8,10 @@
     <style>
         body {
             padding: 0;
-            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             box-sizing: border-box;
             line-height: 1;
         }
@@ -39,12 +42,37 @@
             height: 30px;
             object-fit: cover;
         }
+
+        form {
+            padding: 20px;
+            border: 1px solid orange;
+        }
+
+        input {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        button {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: orange;
+        }
+
     </style>
 </head>
 <body>
     <div class="app">
-        <button>Click</button>
+        <button>Click me</button>
     </div>
+    <form>
+        <input type="text" name="name">
+        <input type="text" name="age">
+        <button class="btn">Submit</button>
+    </form>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
